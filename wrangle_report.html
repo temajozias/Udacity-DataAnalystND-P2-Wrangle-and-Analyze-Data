@@ -14754,24 +14754,277 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Here are the results of the <code>.info()</code> method on each of the three dataframes.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_enhanced</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 2356 entries, 0 to 2355
+Data columns (total 17 columns):
+ #   Column                      Non-Null Count  Dtype  
+---  ------                      --------------  -----  
+ 0   tweet_id                    2356 non-null   int64  
+ 1   in_reply_to_status_id       78 non-null     float64
+ 2   in_reply_to_user_id         78 non-null     float64
+ 3   timestamp                   2356 non-null   object 
+ 4   source                      2356 non-null   object 
+ 5   text                        2356 non-null   object 
+ 6   retweeted_status_id         181 non-null    float64
+ 7   retweeted_status_user_id    181 non-null    float64
+ 8   retweeted_status_timestamp  181 non-null    object 
+ 9   expanded_urls               2297 non-null   object 
+ 10  rating_numerator            2356 non-null   int64  
+ 11  rating_denominator          2356 non-null   int64  
+ 12  name                        2356 non-null   object 
+ 13  doggo                       2356 non-null   object 
+ 14  floofer                     2356 non-null   object 
+ 15  pupper                      2356 non-null   object 
+ 16  puppo                       2356 non-null   object 
+dtypes: float64(4), int64(3), object(10)
+memory usage: 313.0+ KB
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">twitter_archive_from_api</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 2354 entries, 0 to 2353
+Data columns (total 7 columns):
+ #   Column          Non-Null Count  Dtype 
+---  ------          --------------  ----- 
+ 0   tweet_id        2354 non-null   object
+ 1   created_at      2354 non-null   object
+ 2   full_text       2354 non-null   object
+ 3   retweet_count   2354 non-null   int64 
+ 4   favorite_count  2354 non-null   int64 
+ 5   expanded_urls   2073 non-null   object
+ 6   source          2354 non-null   object
+dtypes: int64(2), object(5)
+memory usage: 128.9+ KB
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">image_predictions</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 2075 entries, 0 to 2074
+Data columns (total 12 columns):
+ #   Column    Non-Null Count  Dtype  
+---  ------    --------------  -----  
+ 0   tweet_id  2075 non-null   int64  
+ 1   jpg_url   2075 non-null   object 
+ 2   img_num   2075 non-null   int64  
+ 3   p1        2075 non-null   object 
+ 4   p1_conf   2075 non-null   float64
+ 5   p1_dog    2075 non-null   bool   
+ 6   p2        2075 non-null   object 
+ 7   p2_conf   2075 non-null   float64
+ 8   p2_dog    2075 non-null   bool   
+ 9   p3        2075 non-null   object 
+ 10  p3_conf   2075 non-null   float64
+ 11  p3_dog    2075 non-null   bool   
+dtypes: bool(3), float64(3), int64(2), object(4)
+memory usage: 152.1+ KB
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We detected these quality issues and these tidiness issues.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Quality-issues">Quality issues<a class="anchor-link" href="#Quality-issues">&#182;</a></h3><p><code>twitter_archive_enhanced</code> dataframe:</p>
 <ol>
-<li><p><code>in_reply_to_status_id</code>, <code>in_reply_to_user_id</code> are floats, must be integers</p>
-</li>
-<li><p><code>retweeted_status_id</code>, <code>retweeted_status_user_id</code> are floats, must be integers</p>
-</li>
-<li><p>columns with  missing values: <code>expanded_urls</code>, <code>retweeted_status_id</code>, <code>retweeted_status_user_id</code>, <code>in_reply_to_status_id</code>, <code>in_reply_to_user_id</code>, <code>retweeted_status_timestamp</code></p>
-</li>
-<li><p>columns that must be datetime format not string : <code>timestamp</code>, <code>retweeted_status_timestamp</code></p>
+<li><code>in_reply_to_status_id</code>, <code>in_reply_to_user_id</code> are floats, must be integers</li>
+</ol>
+<p>The function <code>.info()</code> reveal that  the data types and number of non-null values are:</p>
+
+<pre><code> Column                      Dtype  
+ ------                      -----  
+in_reply_to_status_id        float64
+
+in_reply_to_user_id          float64 
+
+</code></pre>
+<ol>
+<li><p><code>retweeted_status_id</code>, <code>retweeted_status_user_id</code> are floats, must be integers:</p>
+
+<pre><code> Column                     Dtype  
+ ------                     -----  
+retweeted_status_id         float64
+
+retweeted_status_user_id    float64</code></pre>
 </li>
 </ol>
+<ol>
+<li>columns with  missing values: <code>expanded_urls</code>, <code>retweeted_status_id</code>, <code>retweeted_status_user_id</code>, <code>in_reply_to_status_id</code>, <code>in_reply_to_user_id</code>, <code>retweeted_status_timestamp</code></li>
+</ol>
+<p>The dataframe has 2356 entries, but there are culumns that have less.</p>
+
+<pre><code>     #   Column                      Non-Null Count  Dtype  
+    ---  ------                      --------------  -----  
+     1   in_reply_to_status_id       78 non-null     float64
+     2   in_reply_to_user_id         78 non-null     float64
+     6   retweeted_status_id         181 non-null    float64
+     7   retweeted_status_user_id    181 non-null    float64
+     8   retweeted_status_timestamp  181 non-null    object 
+     9   expanded_urls               2297 non-null   object 
+
+</code></pre>
+<ol>
+<li>columns that must be datetime format not string : <code>timestamp</code>, <code>retweeted_status_timestamp</code></li>
+</ol>
+<p>These columns refers to the time, they need to be in datetime for further analysis with the datetime functions.</p>
+
+<pre><code>     #   Column                      Non-Null Count  Dtype  
+    ---  ------                      --------------  -----  
+     3   timestamp                   2356 non-null   object 
+     8   retweeted_status_timestamp  181 non-null    object 
+
+
+</code></pre>
 <p><code>twitter_archive_from_api</code> dataframe:</p>
 <ol>
-<li><p><code>tweet_id</code> are strings, must be integers</p>
-</li>
+<li><code>tweet_id</code> are strings, must be integers</li>
+</ol>
+<p>The <code>tweet_id</code> data type is incorrect for analysis, to ensure analysis on that column, it must be converted to integer.</p>
+
+<pre><code>     #   Column          Non-Null Count  Dtype 
+    ---  ------          --------------  ----- 
+     0   tweet_id        2354 non-null   object
+
+</code></pre>
+<ol>
 <li><p>columns that must be datetime format not string : <code>created_at</code></p>
+
+<pre><code>  #   Column          Non-Null Count  Dtype 
+ ---  ------          --------------  ----- 
+  1   created_at      2354 non-null   object</code></pre>
+</li>
+<li><p>columns with  missing values: <code>expanded_urls</code></p>
 </li>
 </ol>
+<p>The dataframe has 2354 entries, but there are culumns that have less.</p>
+
+<pre><code>     #   Column          Non-Null Count  Dtype 
+    ---  ------          --------------  ----- 
+     5   expanded_urls   2073 non-null   object</code></pre>
 
 </div>
 </div>
@@ -14789,21 +15042,29 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </li>
 <li><p>separate tables for existing and non existing <code>expanded_urls</code></p>
 </li>
-<li><p>separate tables for existing and non existing <code>expanded_urls</code>, <code>retweeted_status_id</code>, <code>retweeted_status_user_id</code>, <code>retweeted_status_timestamp</code></p>
-</li>
-<li><p>separate tables for existing and non existing <code>expanded_urls</code>, <code>in_reply_to_status_id</code>, <code>in_reply_to_user_id</code></p>
-</li>
 </ol>
+<p>We only want tweets that we can retrieve.</p>
+<ol>
+<li>separate tables for existing and non existing <code>expanded_urls</code>, <code>retweeted_status_id</code>, <code>retweeted_status_user_id</code>, <code>retweeted_status_timestamp</code> </li>
+</ol>
+<p>We only want original tweets, not retweets.</p>
+<ol>
+<li>separate tables for existing and non existing <code>expanded_urls</code>, <code>in_reply_to_status_id</code>, <code>in_reply_to_user_id</code></li>
+</ol>
+<p>We only want original tweets, not replies.</p>
 <p><code>twitter_archive_from_api</code> dataframe:</p>
 <ol>
-<li><p>drop non existig <code>expanded_urls</code></p>
-</li>
-<li><p>missing rating colomns(rating numerator and rating denominator) all of that are in the text message</p>
-</li>
-<li><p>missing dog's name. The dog's name is in the text message. Need extraction.</p>
-</li>
+<li>drop non existig <code>expanded_urls</code></li>
 </ol>
-<p>Create a <code>master_twitter_archive</code> dataframe from the two dataframes:</p>
+<p>We only want tweets that we can retrieve.</p>
+<ol>
+<li>missing rating colomns(rating numerator and rating denominator) all of that are in the text message</li>
+</ol>
+<p>We need to extract the rating numerator and the rating denominator from the text message</p>
+<ol>
+<li>missing dog's name. The dog's name is in the text message. Need extraction.</li>
+</ol>
+<p>Create a <code>master_twitter_archive</code> dataframe from the three dataframes:</p>
 
 </div>
 </div>
